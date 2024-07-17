@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Project</title>
+
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Display Username Edit Popup -->
+    <div id="overlay">
+        <div class="user-popup">
+          <button id="close">&times;</button>
+          <h2>Welcome to A.H. Abir's Webpage</h2>
+          <p>Type your name and click on submit. <br> (Maximum limit: 16 characters)</p>
+          <p>User Name:</p>
+          <input type="text" id="userInput" placeholder="Type your name here" maxlength="16">
+          <a class="submitBtn" onclick="submit()">Submit</a>
+        </div>
+    </div>
+
+    <h1>Local Storage Data</h1>
+    
+
+    <p>Output Data: <span id="display"></span></p>
+
+    <!-- JS Source -->
+    <script src="script.js"></script>
+</body>
+</html>

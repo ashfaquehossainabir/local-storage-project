@@ -1,0 +1,91 @@
+/* Username Popup Box */
+.user-popup{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    z-index: 1;
+}
+.user-popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.user-popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+    border-radius: 32px;
+    cursor: pointer;
+}
+a:hover {
+    background-color: #28a745;
+    color: white;
+}
+#userInput {
+    padding: 10px 15px;
+    border: 2px solid #cccccc;
+    float: left;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0,0,0,0.5); */
+    /* background: linear-gradient(to top right, #00ccff 0%, #cc00cc 100%); */
+    /* background: linear-gradient(to top right, #3366cc 0%, #cc0099 100%); */
+    background: linear-gradient(to top right, #990099 0%, #6600cc 100%);
+    z-index: 2;
+}
+
+#username {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-popup {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .user-popup {
+        width: 370px;
+    }
+}
+
+.submitBtn {
+    margin-top: 90px;
+}
